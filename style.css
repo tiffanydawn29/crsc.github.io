@@ -1,7 +1,45 @@
+html {
+    font-size: 62.5%;
+  }
+
 body {
-    background-color: #F3F0D7;
-    background-image: url(paper.gif);
+    background-color: #0A3D5F;
+    background-image: url(images/crscdesign2.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+header {
+    background-color: rgba(0, 115, 174, 0.75);
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    flex-flow: column wrap;
+}
+nav a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3.0rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgba(241, 93, 46, 1);
+  }
