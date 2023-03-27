@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: rgba(10, 61, 95, 1);
-    background-image: url(images/crscdesign2.png);
+    /* background-image: url(images/crscdesign2.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,6 +30,10 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.logo {
+    width: 150px;
+    height: auto;
+}
 nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -68,11 +72,6 @@ nav a:hover {
     margin: 0;
   }
 
-  .hero {
-    /* display: flex;
-    flex-flow: column wrap; */
-    /* border: 4px solid rgba(255, 255, 255, 0.75); */
-  }
 
   .hero-item {
     display: flex;
@@ -111,22 +110,41 @@ nav a:hover {
 
 
 
-.item1 {
+/* .item1 {
     background-color: rgba(0, 115, 174, 0.75);
     height: 400px;
-}
+} */
 
 .item1 p {
     margin: 0;
-    font-size: 5.0rem;
+    /* font-size: 5.0rem;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 500;
     padding-top: 100px;
-    text-align: center;
+    text-align: center; */
 }
 
 .item2 {
+    margin: 0;
+    padding: 0;
+}
+
+.item3 {
+    margin: 0;
+    padding: 0;
+}
+
+.item4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+}
+/* .item2 {
     background-color: rgba(0, 115, 174, 0.75);
     height: 400px;
 }
@@ -163,4 +181,4 @@ nav a:hover {
     padding-top: 100px;
     text-align: center;
 
-}
+} */
