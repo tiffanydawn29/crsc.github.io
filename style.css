@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 115, 174, 1);
+    background-color: rgba(0, 115, 174, 0.75);
     margin: 0 auto;
     padding: 10px 25px;
 }
@@ -37,6 +37,7 @@ h1 {
 .logo {
     width: 125px;
     height: auto;
+    padding: 15px;
 }
 
 * {
@@ -108,12 +109,20 @@ h1 {
   border-radius: 4px;
   }
 
+  .hero {
+    background: linear-gradient(180deg, rgba(0,115,174, 0.50) 75%, rgba(0,115,174,0.50) 75%), url(images/evantandem2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* adjust height for bigger screens */
+    height: 50vh;
+    background-position: center;
+  }
 
   .hero-item {
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
-    align-items: center;
+    justify-content: baseline;
+    align-content: flex-start;
     padding: 50px;
   }
 
@@ -123,7 +132,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 500;
     padding-top: 100px;
-    text-align: center;
+    text-align: start;
   }
 
 .button-hero {
@@ -141,4 +150,20 @@ h1 {
     color: rgba(241, 93, 46, 1);
   }
 
+  /* testing a theory */
+  .the-dz {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+  }
 
+  .the-dz h2 {
+    font-size: 5.0rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 100px;
+    text-align: center;
+  }
