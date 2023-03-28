@@ -150,20 +150,65 @@ h1 {
     color: rgba(241, 93, 46, 1);
   }
 
-  /* testing a theory */
-  .the-dz {
+/* HOW IT WORKS SECTION */
+.pickyouradventure-container{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
-  }
-
-  .the-dz h2 {
+ }
+ .pickyouradventure-container h2 {
+    color: rgba(10, 61, 95, 1);
+    margin: auto;
+    padding: 25px;
     font-size: 5.0rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-top: 100px;
-    text-align: center;
-  }
+    padding-top: 25px;
+    background-color:rgba(241, 93, 46, 0.75);
+    border-radius: 4px;
+    margin: 15px;
+}
+
+ .adventure-options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 10px;
+ }
+
+ .adventure {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    flex-basis: 25%;
+    padding: 25px;
+    background-color:rgba(241, 93, 46, 0.75);
+    border-radius: 4px;
+    margin: 15px;
+    padding: 25px;
+    
+ 
+ }
+ .adventure p {
+text-align: center;
+margin: auto;
+color: rgba(10, 61, 95, 1);
+font-size: 3.0rem;
+font-weight: 600;
+padding-top: 15px;
+ }
+
+
+
+
+ /* .how-it-works a {
+    text-decoration: underline;
+    font-size: 1.6rem;
+    color: #424B5A;
+    margin: auto;
+    padding-bottom: 50px;
+ } */
