@@ -110,12 +110,12 @@ h1 {
   }
 
   .hero {
-    background: linear-gradient(180deg, rgba(0,115,174, 0.50) 75%, rgba(0,115,174,0.50) 75%), url(images/evantandem2.jpg);
+    background: linear-gradient(180deg, rgba(0,115,174, 0.25) 75%, rgba(0,115,174,0.25) 75%), url(images/sunsetskydivers.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     /* adjust height for bigger screens */
-    height: 50vh;
-    background-position: center;
+    width: 100%;
+    background-position: 55%;
   }
 
   .hero-item {
@@ -150,25 +150,27 @@ h1 {
     color: rgba(241, 93, 46, 1);
   }
 
-/* HOW IT WORKS SECTION */
+/* PICK YOUR ADVENTURE */
 .pickyouradventure-container{
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.65);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;    
+    padding: 15px;
  }
+
  .pickyouradventure-container h2 {
-    color: rgba(10, 61, 95, 1);
-    margin: auto;
-    padding: 25px;
-    font-size: 5.0rem;
-    padding-top: 25px;
-    background-color:rgba(241, 93, 46, 0.75);
-    border-radius: 4px;
-    margin: 15px;
-}
+    color: white;
+    font-size: 3.0rem;
+    text-align: center;
+    background: rgb(246,189,47);
+    background: linear-gradient(0deg, rgba(246,189,47,0.9) 3%, rgba(241,93,46,0.9) 42%, rgba(0,115,174,0.7) 98%);
+    border-radius: 8px;
+    margin: 15px;    
+    padding: 8px;
+ }
 
  .adventure-options {
     display: flex;
@@ -186,24 +188,26 @@ h1 {
     justify-content: space-evenly;
     flex-basis: 25%;
     padding: 25px;
-    background-color:rgba(241, 93, 46, 0.75);
-    border-radius: 4px;
-    margin: 15px;
-    padding: 25px;
-    
- 
+    background: rgb(246,189,47);
+    background: linear-gradient(350deg, rgba(246,189,47,0.9) 3%, rgba(241,93,46,0.9) 42%, rgba(0,115,174,0.7) 98%);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 15px;
  }
+
  .adventure p {
 text-align: center;
 margin: auto;
-color: rgba(10, 61, 95, 1);
-font-size: 3.0rem;
+color: white;
+font-size: 2.4rem;
 font-weight: 600;
 padding-top: 15px;
+line-height: 3rem;
  }
 
-
-
+ .adventure img {
+    max-width: 250px;
+ }
 
  /* .how-it-works a {
     text-decoration: underline;
@@ -212,3 +216,64 @@ padding-top: 15px;
     margin: auto;
     padding-bottom: 50px;
  } */
+
+ @media (min-width:375px) {
+
+ }
+
+ @media only screen and (min-width: 768px) {
+
+    .hero {
+    width: 100%;
+    background-position: 45% 55%;
+    }
+    .pickyouradventure-container h2 {
+        flex-wrap: column wrap;
+        font-size: 5.0rem;
+        margin: 15px;    
+        padding: 25px;
+     }
+
+     .adventure {
+        flex-basis: 25%;
+        margin: 15px;
+        padding: 15px;
+     }
+
+     .adventure p {
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding-top: 15px;
+         }
+
+    .adventure img {
+        max-width: 250px;
+     }
+ }
+
+ @media (min-width: 911px) {
+
+    .hero {
+        background-position: top;
+    }
+ }
+
+ @media only screen and (min-width: 1024px) {
+
+    .hero {
+     width: 100%;
+     background-position: 0% 20%;
+        }
+
+    .adventure {
+        justify-content: space-around;
+        margin: 15px;
+        padding: 15px;
+        }
+
+        .adventure p {
+            font-size: 2.4rem;
+            font-weight: 600;
+            padding-top: 15px;
+             }
+    }
