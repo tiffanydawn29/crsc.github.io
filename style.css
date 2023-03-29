@@ -270,7 +270,7 @@ line-height: 3rem;
     @media only screen and (min-width: 1220) {
 
         .hero {
-            background-position: center;
+            background-position: bottom;
         }
 
         .adventure-options {
