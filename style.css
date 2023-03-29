@@ -110,7 +110,7 @@ h1 {
   }
 
   .hero {
-    background: linear-gradient(180deg, rgba(0,115,174, 0.25) 75%, rgba(0,115,174,0.25) 75%), url(images/sunsetskydivers.JPG);
+    background: linear-gradient(180deg, rgba(0,115,174, 0.25) 75%, rgba(0,115,174,0.25) 75%), url(images/sunsettadem.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     /* adjust height for bigger screens */
@@ -152,7 +152,7 @@ h1 {
 
 /* PICK YOUR ADVENTURE */
 .pickyouradventure-container{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(80, 202, 245, 0.7);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -209,17 +209,6 @@ line-height: 3rem;
     max-width: 250px;
  }
 
- /* .how-it-works a {
-    text-decoration: underline;
-    font-size: 1.6rem;
-    color: #424B5A;
-    margin: auto;
-    padding-bottom: 50px;
- } */
-
- @media (min-width:375px) {
-
- }
 
  @media only screen and (min-width: 768px) {
 
@@ -246,15 +235,15 @@ line-height: 3rem;
         padding-top: 15px;
          }
 
-    .adventure img {
+    /* .adventure img {
         max-width: 250px;
-     }
+     } */
  }
 
  @media (min-width: 911px) {
 
     .hero {
-        background-position: top;
+        /* background-position: top; */
     }
  }
 
@@ -262,11 +251,11 @@ line-height: 3rem;
 
     .hero {
      width: 100%;
-     background-position: 0% 20%;
+     background-position: 0% 25%;
         }
 
     .adventure {
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 15px;
         padding: 15px;
         }
@@ -276,4 +265,25 @@ line-height: 3rem;
             font-weight: 600;
             padding-top: 15px;
              }
+    }
+
+    @media only screen and (min-width: 1220) {
+
+        .hero {
+            background-position: center;
+        }
+
+        .adventure-options {
+            flex-basis: 30%;
+        }
+
+        .adventure {
+            margin: 15px;
+            padding: 15px;
+            flex-basis: 50%;
+            }
+
+            .adventure img {
+                width: 500px;
+            }
     }
