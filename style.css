@@ -282,7 +282,9 @@ line-height: 3rem;
 
   /* Tandem Booking page styling */
 
-  .tandem-pricing-hero{
+
+
+  .tandem-pricing {
     background-color: rgba(10, 61, 95, 1);
     background: rgb(0,115,174);
     background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/evantandem2.jpg);
@@ -291,21 +293,17 @@ line-height: 3rem;
     background-position: center;
     width: 100%;
     height: 500px;
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-flow: column wrap;
     align-content: center;
+    text-align: center;
    }
-  
-  .pricing-info {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 0;
-  }
-  
+
    .tandem-pricing-hero h2 {
     font-family: 'destroyregular';
     line-height: 6rem;
-    font-size: 7.0rem;
+    font-size: 8.0rem;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     font-weight: 500;
@@ -314,69 +312,126 @@ line-height: 3rem;
   }
   
   .tandem-pricing-hero h3 {
-    font-family: 'destroyregular';
-    line-height: 4rem;
-    font-size: 3.0rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px;
-  }
+      padding: 25px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+   }
   
-  .pricing-info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-  align-content: center;
-  }
+   .pricing-info-container {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 25px 0;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: flex-start;
+  /*     align-content: flex-start; */
+      margin: auto;
+      padding: 50px;
+   }
   
-  .pricing-info h4 {
-    font-size: 2.4rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .pricing-info p {
-    font-size: 1.8rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: center;
-  }
-  
-  .pricing-block {
-    background-color: rgba(255, 255, 255, 1);
+   .pricing-info{
+    background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
-    padding: 15px;
-    margin: 25px 50px;
+    padding: 10px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .pricing-block:nth-child(odd) {
-    flex-flow: row-reverse nowrap;
-  }
-  
-  .pricing-image {
+    flex-flow: column wrap;
+    text-align: center;
+   }
+
+   .pricing-info h3{
+    font-size: 3.6rem;
+    color: rgba(10, 61, 95, 1);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+   }
+
+   .pricing-block h4{
+    font-size: 2.8rem;
+    color: rgba(10, 61, 95, 1);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+   }
+   
+   .pricing-block p{
+    font-size: 2.4rem;
+    color: rgba(10, 61, 95, 1);
+    /* text-transform: uppercase; */
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
+   }
+
+   .pricing-tiers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+/*     align-content: flex-start; */
+    margin: auto;
     padding: 25px;
+ }
+
+ .pricing-block:nth-child(2){
+  border-left: 1px solid rgba(10, 61, 95, 1);
+  border-right: 1px solid rgba(10, 61, 95, 1);
+ }
+
+   .pricing-block  {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 50px;
+   }
+
+   
+  /* .tandem-pricing h3 {
+      font-size: 5.0rem;
+      padding-top: 25px;
   }
   
-  .pricing-words {
-    padding: 25px;
+  .tandem-pricing h4 {
+      font-size: 1.8rem;
   }
   
-  .pricing-image img {
-  max-width: 400px;
+
+   .tandem-pricing a {
+      text-decoration: underline;
+      font-size: 1.6rem;
+      color: #424B5A;
+      margin: auto;
+      padding-bottom: 50px;
+   } */
+  
+  .button {
+    background-color: rgba(80, 202, 245, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 3px solid rgba(10,61,95,1);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-self: center;
+    font-size: 2.8rem;
+    margin: 15px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+      color: rgba(241, 93, 46, 1);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
-
 
    /* End of Tandem Booking */
 
