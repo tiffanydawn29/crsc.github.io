@@ -296,6 +296,7 @@ line-height: 3rem;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 25px 0;
 }
+
  .about-hero h2 {
   font-family: 'destroyregular';
   line-height: 6rem;
@@ -344,7 +345,7 @@ align-content: center;
 .info-block {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 8px;
-  padding: 25px;
+  padding: 15px;
   margin: 25px 50px;
   display: flex;
   flex-flow: row nowrap;
@@ -369,6 +370,89 @@ max-width: 400px;
 }
 
  /* End about us  */
+
+  /* Contact us page styling */
+
+  .contact-hero {
+    background-color: rgba(10, 61, 95, 1);
+    background: rgb(0,115,174);
+    background: linear-gradient(350deg, rgba(0,115,174,0.5) 3%, rgba(0,115,174,0.5) 42%, rgba(0,115,174,0.5) 98%), url(images/Krystal-tandem.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+   }
+
+   .contact-hero h2 {
+    font-family: 'destroyregular';
+    line-height: 6rem;
+    font-size: 8.0rem;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .contact-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px 0;
+  }
+
+  .contact-block:nth-child(odd) {
+    flex-flow: row-reverse nowrap;
+  }
+
+  .contact-info h4 {
+    font-size: 2.4rem;
+    color: rgba(10, 61, 95, 1);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 1.8rem;
+    color: rgba(10, 61, 95, 1);
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  .contact-block {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 25px 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .info-block:nth-child(odd) {
+    flex-flow: row-reverse nowrap;
+  } */
+  
+  .contact-image {
+    padding: 25px;
+  }
+  
+  .contact-words {
+    padding: 25px;
+  }
+  
+  .contact-image img {
+  max-width: 400px;
+  }
+
+   /* End contact us  */
 
  @media only screen and (min-width: 500px) {
 
