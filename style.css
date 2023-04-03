@@ -268,7 +268,30 @@ line-height: 3rem;
   padding-top: 0;
 }
 
- 
+ /* Testimonials in homepage styling */
+
+ .reviews-container{
+  background-color: rgba(10, 61, 95, 0.5);
+  padding: 25px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  margin: auto;
+  padding: 50px;
+}
+
+ .reviews {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+ }
+
  /* End Homepage custom stylings */
 
  /* Start of Footer Widgets */
@@ -584,7 +607,7 @@ border-radius: 8px;
 
  /* End about us  */
 
-   /* Upcoming Events page styling */
+   /* Upcoming Events Homepage styling */
 
    .upcoming-info {
     background-color: rgba(255, 255, 255, 0.5);
