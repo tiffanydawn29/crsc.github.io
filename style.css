@@ -281,7 +281,7 @@ background-color: transparent;
       display: none;
   }
   .nav-container{
-    max-width: 90%;
+    max-width: 95%;
     padding: 0 2rem;
     margin: 0;
     display:flex;
