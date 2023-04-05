@@ -28,16 +28,40 @@ body {
   width: 100vw;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
 
 a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+
+.button {
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-self: center;
+  font-size: 2.2rem;
+  margin: 8px;
+  cursor: pointer;
 }
+
+.button:hover {
+    color: rgba(241, 93, 46, 1);
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 
 
 /*---------------------  Header/Navigation Styling --------------------- */
@@ -622,7 +646,7 @@ border-radius: 8px;
    }
 
    .pricing-info h3{
-    font-size: 3.6rem;
+    font-size: 3.0rem;
     color: rgba(10, 61, 95, 1);
     text-transform: uppercase;
     font-weight: 600;
@@ -631,7 +655,7 @@ border-radius: 8px;
    }
 
    .pricing-block h4{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: rgba(10, 61, 95, 1);
     text-transform: uppercase;
     font-weight: 400;
@@ -640,7 +664,7 @@ border-radius: 8px;
    }
    
    .pricing-block p{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: rgba(10, 61, 95, 1);
     font-weight: 300;
     text-align: center;
@@ -674,11 +698,10 @@ border-radius: 8px;
 
    
   
-  .button {
+  /* .button {
     background: rgb(80,202,245);
     background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* border: 3px solid white; */
     border: none;
     border-radius: 8px;
     color: white;
@@ -699,7 +722,7 @@ border-radius: 8px;
   .button:hover {
       color: rgba(241, 93, 46, 1);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  }
+  } */
 
    /* End of Tandem Booking */
 
@@ -1236,6 +1259,21 @@ border-radius: 8px;
   font-size: 1.8rem;
 }
 
+.pricing-info h3{
+  font-size: 3.6rem;
+  padding: 15px;
+ }
+
+ .pricing-block h4{
+  font-size: 2.8rem;
+  padding: 10px;
+ }
+ 
+ .pricing-block p{
+  font-size: 2.4rem;
+  padding: 15px;
+ }
+
 .about-words h4 {
   font-size: 2.4rem;
   padding: 15px;
@@ -1282,6 +1320,12 @@ border-radius: 8px;
  @media only screen and (min-width: 768px) {
 
  /*---------------- Hero  ------------------*/
+
+ .button {
+  padding: 10px 32px;
+  font-size: 2.8rem;
+  margin: 15px;
+}
 
   .hamburger-menu-container p{
     font-size: 2.4rem;
