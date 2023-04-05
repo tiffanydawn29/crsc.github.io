@@ -7,45 +7,41 @@
 }
 
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
 
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: rgba(10, 61, 95, 1);
-    background-image: url(images/crscdesign2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-    width: 100vw;
+  background-color: rgba(10, 61, 95, 1);
+  background-image: url(images/crscdesign2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100vw;
 }
 
 
 a {
-    text-decoration: none;
-    color: #FFFFFF;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-  
-  /* body {
-    background-color: rgba(0, 115, 174, 0.75);
-    width: 100vw;
-  } */
 
 /*---------------------  Header/Navigation Styling --------------------- */
+
 
 header {
   position: fixed;
@@ -83,7 +79,6 @@ header {
   z-index: 1001;
 }
 
-
 .nav-bar{
   position:fixed;
   left: 0;
@@ -98,20 +93,18 @@ header {
   transition: .65s;
 }
 
-    #check:checked ~ .nav-bar{
-        transform: translateX(0);
-    }
+#check:checked ~ .nav-bar{
+  transform: translateX(0);
+}
 
-    #check:checked ~ .nav-bar .nav-link,
-    #check:checked ~ .nav-bar .search-bar{
-        animation: animation .5s ease forwards var(--i);
-    }
+#check:checked ~ .nav-bar .nav-link,
+#check:checked ~ .nav-bar .search-bar{
+  animation: animation .5s ease forwards var(--i);
+}
 
 .nav-links{
   width:100%;
 }
-
-
 
 .nav-links ul{
   display:flex;
@@ -160,33 +153,31 @@ header {
 
 .nav-link:hover > .dropdown,
 .dropdown-link:hover > .dropdown{
-    transform: translate(0, 0);
-    opacity: 1;
-    pointer-events: auto;
-    display: block;
-    background-color:rgba(10, 61, 95,1);
-    width: 100%;
+  transform: translate(0, 0);
+  opacity: 1;
+  pointer-events: auto;
+  display: block;
+  background-color:rgba(10, 61, 95,1);
+  width: 100%;
 }
 
 .dropdown > ul{
-list-style: none;
+  list-style: none;
 }
 
 .dropdown ul li{
-padding: 1rem 0rem;
-  }
+  padding: 1rem 0rem;
+}
 
-    .dropdown-link > a{
-        color: #fff;
-        padding: 1.2rem 3.5rem;
-        line-height: 2.4rem;
-        font-size: 2.2rem;
-    }
-
-
+.dropdown-link > a{
+  color: #fff;
+  padding: 1.2rem 3.5rem;
+  line-height: 2.4rem;
+  font-size: 2.2rem;
+}
 
 .dropdown-link:hover > a{
-background-color: transparent;
+  background-color: transparent;
   width:100%;
   padding: 1.2rem 2.5rem;
   color: rgba(241, 93, 46, 1);
@@ -204,6 +195,7 @@ background-color: transparent;
   align-items:center;
   justify-content: flex-end;
 }
+
 .hamburger-menu-container p{
   font-size: 2.0rem;
   color: #fff;
@@ -280,128 +272,6 @@ background-color: transparent;
 
 /*---------------------  End Navigation Styling --------------------- */
 
-
-
-/*--------------------- Navigation Media Query ---------------------*/
-/* @media only screen and (min-width: 1024px){
-  
-  #check{
-      display: none;
-  }
-  .nav-container{
-    max-width: 95%;
-    padding: 0 2rem;
-    margin: 0;
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-
-.nav-bar{
-  position: initial;
-  padding: 25px 0;
-  background-color: transparent;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  overflow-x:initial;
-  overflow-y: initial;
-  transform: none;
-  text-align: center;
-} 
- 
-  .nav-links {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-    .nav-links {
-    padding: 0 15px;
-  }
-  
-    .nav-link {
-    justify-content: space-around;
-    align-items: flex-start;
-    float: left;
-    list-style: none;
-    padding: 0 10px;
-  }
-  
- .nav-link a {
-    display: flex;
-    flex-flow: row nowrap;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align:start;
-    font-size: 1.8rem;
-    padding: 10px 0;
-    text-decoration: none;
-  }
-  
-   .nav-link a:hover {
-    color: rgba(241, 93, 46, 1);
-    background-color: none;
-  }
-  
-  .nav-links ul{
-    background-color: none;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-
-   .nav-link ul {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 115, 174, 1); 
-    border-radius: 0px 0px 4px 4px;
-  }
-  
-   .nav-link:hover ul {
-    background-color: rgba(0, 115, 174, 1); 
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    width: 350px;
-    z-index: 1001;
-  }
-  
-  .nav-link:hover > a{
-    background-color: transparent;
-    color: rgba(241, 93, 46, 1);
-    width: 100%;
-    z-index: 1001;
-  }
-
-.dropdown ul{
-  width:100%;
-}
-
-.dropdown-link ul{
-  width: 100%;
-  }
-  
-  .dropdown-link li {
-  padding: 8px 14px;
-  }
-  
- .dropdown-link a:hover {
-  color: rgba(241, 93, 46, 1);
-  border-radius: 4px;
-  z-index: 1001;
-  }
-
-
-  .hamburger-menu-container{
-    display: none;
-  }
-} */
-
-/*--------------------- End Navigation ---------------------*/
 
  .hero video, .video-overlay {
     width: 100%;
@@ -1009,7 +879,7 @@ border-radius: 8px;
   }
   
   .contact-image img {
-    max-width: 200px;
+    max-width: 250px;
     background: rgb(80,202,245);
     background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
