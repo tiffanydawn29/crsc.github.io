@@ -14,49 +14,56 @@
     <title>Contact Us - Campbell River Skydive Centre</title>
   </head>
   <header>
-    <a href="index.html"
-      ><img
-        class="logo"
-        src="images/CRSClogowhite.png"
-        alt="Campbell River Skydive Center Logo"
-      />
-    </a>
-
-    <input type="checkbox" id="menu-bar">
-    <label for="menu-bar">Menu</label>
-    
-    <!-- Nav Styling tutorial https://youtu.be/rgUp302f_lY -->
-    <nav class="nav-list">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="#">Services</a>
+    <div class="nav-container">
+      <input type="checkbox" name="" id="check">
+      <div class="logo-container">
+          <a href="index.html"
+          ><img
+            class="logo"
+            src="images/CRSClogowhite.png"
+            alt="Campbell River Skydive Center Logo"
+          />
+        </a>     
+      </div>
+      <div class="nav-bar">
+        <div class="nav-links">
           <ul>
-            <li><a href="tandembooking.html">Book A Tandem</a></li>
-            <li><a href="underconstruction.html">Learn To Skydive</a></li>
-            <li><a href="underconstruction.html">Experienced Jumpers</a></li>
-            <li><a href="underconstruction.html">Demo Jumps</a></li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link">
+              <a href="#">Services +</a>
+              <div class="dropdown">
+              <ul>
+                <li class="dropdown-link"><a href="tandembooking.html">Book A Tandem</a></li>
+                <li class="dropdown-link"><a href="underconstruction.html">Learn To Skydive</a></li>
+                <li class="dropdown-link"><a href="underconstruction.html">Experienced Jumpers</a></li>
+                <li class="dropdown-link"><a href="underconstruction.html">Demo Jumps</a></li>
+              </ul>
+                </div>
+            </li>
+            <li class="nav-link">
+              <a href="#">About Us +</a>
+              <div class="dropdown">
+              <ul>
+                <li class="dropdown-link"><a href="thedropzone.html">The Drop Zone</a></li>
+                <li class="dropdown-link"><a href="underconstruction.html">Meet The Team</a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="nav-link"><a href="ourpartners.html">Our Partners</a></li>
+            <li class="nav-link"><a href="underconstruction.html">FAQ</a></li>
+            <li class="nav-link"><a href="underconstruction.html">Events</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
           </ul>
-        </li>
-        <li>
-          <a href="#">About Us</a>
-          <ul>
-            <li><a href="thedropzone.html">The Drop Zone</a></li>
-            <li><a href="underconstruction.html">Meet The Team</a></li>
-          </ul>
-        </li>
-        <li><a href="ourpartners.html">Our Partners</a></li>
-        <li><a href="underconstruction.html">FAQ</a></li>
-        <li><a href="underconstruction.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- <div class="social-icons">
-      <ul>
-        <li><a href="#">Socials</a></li>
-      </ul>
-    </div> -->
-  </header>
+        </div>
+    </div>
+      <div class="hamburger-menu-container">
+          <p>Menu</p>
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+   </header>
   <main>
     <section class="contact">
       <div class="contact-hero">
