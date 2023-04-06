@@ -90,7 +90,6 @@ header {
 }
 
 .nav-container{
-  max-width: 80;
   padding: 0 2rem;
   margin: 0;
   display:flex;
@@ -559,7 +558,7 @@ border-radius: 8px;
   width: 100%;
 }
  .information {
-  background-color: none;
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
@@ -1594,13 +1593,6 @@ border-radius: 8px;
     z-index: 1001;
   }
 
-    .pickyouradventure-container h2 {
-        flex-wrap: column wrap;
-        font-size: 5.0rem;
-        margin: 15px;    
-        padding: 25px;
-     }
-
   .adventure-options {
     flex-flow: row nowrap;
     width: 90%;
@@ -1819,11 +1811,11 @@ border-radius: 8px;
   
    .nav-link a:hover {
     color: rgba(241, 93, 46, 1);
-    background-color: none;
+    background-color: transparent;
   }
   
   .nav-links ul{
-    background-color: none;
+    background-color: transparent;
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
