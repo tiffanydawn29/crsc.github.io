@@ -3,14 +3,15 @@
   src: url('assets/DESTROY_-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
+/* I watched Claire talk about best practices for organizing your css. I did the best I could for now. I will be looking into this more as I have more time. As the day went on everything seemed to flow better and I think the code I orgainzed yesterday and today is alot better than it was a couple of days ago. Work in progress. */
 
 html {
   font-size: 62.5%;
 }
 
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,8 +59,8 @@ a {
 }
 
 .button:hover {
-    color: rgba(241, 93, 46, 1);
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: rgba(241, 93, 46, 1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 
@@ -295,30 +296,26 @@ header {
 
 /*---------------------  End Navigation Styling --------------------- */
 
+/*---------------------   Hero Styling --------------------- */
 
- .hero video, .video-overlay {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
+
+.hero video, .video-overlay {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
   
-  .video-overlay {
-    background-color: rgba(10,61,95,0.7);
-  }
+.video-overlay {
+  background-color: rgba(10,61,95,0.7);
+}
 
 /* I tried to not have a video display for smaller devices, but it didn't work. Info on this would be great if there is some */
 
-/* .hero-video{
-  display: none;
-} */
-
 .hero {
-  /* background-color: #rgba(10, 61, 95, 1);
-  background-image: url(images/tucker-tandem.JPG); */
   height: 360px;
   display: flex;
   justify-content: center;
@@ -327,39 +324,29 @@ header {
   text-align: center;
 }
 
-  .hero-item {
-    align-self: center;
-  }
-
-  .hero h1 {
-    font-family: 'destroyregular';
-    line-height: 4rem;
-    font-size: 3.4rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 125px;
-  }
-
-.button-hero {
-    font-size: 3.0rem;
-    font-weight: 400;
-   text-transform: uppercase;
-   color: #ffffff;
-   border: 2px solid #FFFFFF;
-   padding: 16px;
-   border-radius: 8px;
-   text-align: center;
+.hero-item {
+  align-self: center;
 }
 
-.button-hero a:hover {
-    color: rgba(241, 93, 46, 1);
-  }
+.hero h1 {
+  font-family: 'destroyregular';
+  line-height: 4rem;
+  font-size: 3.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 125px;
+}
 
-/* PICK YOUR ADVENTURE */
+
+/*--------------------- End  Hero Styling --------------------- */
+
+
+/*---------------------  PICK YOUR ADVENTURE --------------------- */
+
+
 .pickyouradventure-container{
-    /* background-color: rgba(80, 202, 245, 0.7); */
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     flex-flow: column wrap;
@@ -367,63 +354,66 @@ header {
     align-items: center;
     margin: 0 auto;    
     padding: 15px;
- }
+}
 
- .pickyouradventure-container h2 {
-    color: white;
-    font-size: 3.0rem;
-    text-align: center;
-    background: rgb(246,189,47);
-    background: linear-gradient(0deg, rgba(246,189,47,0.9) 3%, rgba(241,93,46,0.9) 42%, rgba(0,115,174,0.7) 98%);
-    border-radius: 8px;
-    margin: 15px;    
-    padding: 8px;
- }
+.pickyouradventure-container h2 {
+  color: white;
+  font-size: 3.0rem;
+  text-align: center;
+  background: rgb(246,189,47);
+  background: linear-gradient(0deg, rgba(246,189,47,0.9) 3%, rgba(241,93,46,0.9) 42%, rgba(0,115,174,0.7) 98%);
+  border-radius: 8px;
+  margin: 15px;    
+  padding: 8px;
+}
 
- .adventure-options {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 8px;
-    margin: auto;
-    padding: 25px;
- }
+.adventure-options {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 8px;
+  margin: auto;
+  padding: 25px;
+}
 
- .adventure {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    margin: 8px;
-    padding: 8px;
- }
+.adventure {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
 
 .booking-link{
-text-align: center;
-margin: auto;
-color: rgba(10,61,95,1);
-font-size: 2.0rem;
-font-weight: 600;
-padding-top: 15px;
-line-height: 3rem;
-text-decoration: underline;
-text-underline-offset: 2px;
+  text-align: center;
+  margin: auto;
+  color: rgba(10,61,95,1);
+  font-size: 2.0rem;
+  font-weight: 600;
+  padding-top: 15px;
+  line-height: 3rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .booking-link:hover{
   color: rgba(241,93,46,1);
 }
 
- .adventure img {
+.adventure img {
     max-width: 250px;
- }
+}
 
- /*--------------- Homepage custom stylings ---------------*/
+/*---------------------  PICK YOUR ADVENTURE --------------------- */
+
+
+/*--------------- Homepage custom stylings ---------------*/
 
 
 .home-info1 {
@@ -440,7 +430,7 @@ text-underline-offset: 2px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-align-content: center;
+  align-content: center;
 }
 
 .home-words h4 {
@@ -478,10 +468,10 @@ align-content: center;
 }
 
 .home-image {
-padding: 25px;
-display: flex;
-justify-content: center;
-flex-flow: column wrap;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 
 .home-words {
@@ -493,13 +483,13 @@ flex-flow: column wrap;
 }
 
 .home-image img {
-max-width: 250px;
-background: rgb(80,202,245);
-background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-padding: 9px;
-margin: 10px;
-border-radius: 8px;
+  max-width: 250px;
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 9px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
 
@@ -527,9 +517,11 @@ border-radius: 8px;
   padding-top: 0;
 }
 
- /*--------------- Testimonials in homepage styling ---------------*/
+/*--------------- End Homepage custom stylings ---------------*/
 
- .reviews-container{
+/*--------------- Testimonials in homepage styling ---------------*/
+
+.reviews-container{
   background-color: rgba(10, 61, 95, 0.5);
   padding: 25px 0;
   display: flex;
@@ -539,7 +531,7 @@ border-radius: 8px;
   padding: 16px;
 }
 
- .reviews {
+.reviews {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
@@ -548,38 +540,40 @@ border-radius: 8px;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
- }
+}
 
- /*--------------- End Homepage custom stylings ---------------*/
+/*--------------- End Homepage custom stylings ---------------*/
 
- /*--------------- Start of Footer Widgets ---------------*/
+/*--------------- Start of Footer Widgets ---------------*/
+
 .footer-container{
   background-color: rgba(10, 61, 95, 0.5);
   width: 100%;
 }
- .information {
+
+.information {
   background-color: transparent;
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
   align-content: center;
   padding: 10px;
- }
+}
 
- .information-item {
-    border: 10px solid white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 75%;
-    height: 0;
-    padding-bottom: 50%;
-    position: relative;
-    display: flex;
-    flex-basis: 40%;
- }
+.information-item {
+  border: 10px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 75%;
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  display: flex;
+  flex-basis: 40%;
+}
 
- .information-item iframe {
+.information-item iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -587,11 +581,11 @@ border-radius: 8px;
   right: 0;
   width: 100%;
   height: 100%;
- }
+}
 
- /*--------------- End of footer widgets ---------------*/
+/*--------------- End of footer widgets ---------------*/
 
- /*--------------- Copyright/Disclaimer footer styling ---------------*/
+/*--------------- Copyright/Disclaimer footer styling ---------------*/
 .copyright {
   border-top: 0.5px solid #fff;
   display: flex;
@@ -634,125 +628,128 @@ border-radius: 8px;
 }
 
 
- /*--------------- End copyright footer styling ---------------*/
-
-  /*--------------- Tandem Booking page styling ---------------*/
+/*--------------- End copyright footer styling ---------------*/
 
 
+/*--------------- Tandem Booking page styling ---------------*/
 
-  .tandem-pricing {
-    background-color: rgba(10, 61, 95, 1);
-    background: rgb(0,115,174);
-    background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/evantandem2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    display:flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
-    text-align: center;
-   }
 
-   .tandem-pricing-hero h2 {
-    font-family: 'destroyregular';
-    line-height: 6.0rem;
-    font-size: 5.0rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 150px;
-  }
+.tandem-pricing {
+  background-color: rgba(10, 61, 95, 1);
+  background: rgb(0,115,174);
+  background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/evantandem2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  display:flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: center;
+}
+
+.tandem-pricing-hero h2 {
+  font-family: 'destroyregular';
+  line-height: 6.0rem;
+  font-size: 5.0rem;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 150px;
+}
   
-  .tandem-pricing-hero h3 {
-      padding: 25px;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-   }
+.tandem-pricing-hero h3 {
+  padding: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
   
-   .pricing-info-container {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 25px 0;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      padding: 16px;
-   }
+.pricing-info-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+}
   
-   .pricing-info{
-    background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    text-align: center;
-   }
+.pricing-info{
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
 
-   .pricing-info h3{
-    font-size: 3.0rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    padding: 15px;
-   }
+.pricing-info h3{
+  font-size: 3.0rem;
+  color: rgba(10, 61, 95, 1);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+}
 
-   .pricing-block h4{
-    font-size: 2.2rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    padding: 10px;
-   }
+.pricing-block h4{
+  font-size: 2.2rem;
+  color: rgba(10, 61, 95, 1);
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
    
-   .pricing-block p{
-    font-size: 1.8rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 300;
-    text-align: center;
-    padding: 15px;
-   }
+.pricing-block p{
+  font-size: 1.8rem;
+  color: rgba(10, 61, 95, 1);
+  font-weight: 300;
+  text-align: center;
+  padding: 15px;
+}
 
-   .pricing-tiers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    margin: auto;
-    padding: 10px;
- }
+.pricing-tiers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: auto;
+  padding: 10px;
+}
 
 
  /* Trying to figure out how to put a border in between all the middle items. Still working on this one. The following only seems to work for 3 items and then because there are classes it starts adding more in odd spots */
- .pricing-tiers *:not(:first-child):not(:last-child){
+.pricing-tiers *:not(:first-child):not(:last-child){
   border-top: 1px solid rgba(10, 61, 95, 1);
   border-bottom: 1px solid rgba(10, 61, 95, 1);
- }
+}
 
-   .pricing-block  {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      padding: 10px;
-   }
+.pricing-block  {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
  
 
-   /*--------------- About Us Drop zone page styling ---------------*/
+/*--------------- End Tandem Booking page styling ---------------*/
 
 
- .about-hero {
+/*--------------- About Us Drop zone page styling ---------------*/
+
+
+.about-hero {
   background-color: rgba(10, 61, 95, 1);
   background: rgb(0,115,174);
   background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/thedropzone.jpg);
@@ -765,14 +762,14 @@ border-radius: 8px;
   justify-content: center;
   flex-flow: column wrap;
   align-content: center;
- }
+}
 
 .about-info {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 25px 0;
 }
 
- .about-hero h2 {
+.about-hero h2 {
   font-family: 'destroyregular';
   line-height: 6rem;
   font-size: 5.0rem;
@@ -798,7 +795,7 @@ border-radius: 8px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-align-content: center;
+  align-content: center;
 }
 
 .about-info h4 {
@@ -843,10 +840,10 @@ align-content: center;
 }
 
 .about-image {
-padding: 25px;
-display: flex;
-justify-content: center;
-flex-flow: column wrap;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 
 .about-words {
@@ -858,123 +855,123 @@ flex-flow: column wrap;
 }
 
 .about-image img {
-max-width: 250px;
-background: rgb(80,202,245);
-background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-padding: 6px;
-margin: 10px;
-border-radius: 8px;
+  max-width: 250px;
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
- /*---------------- End about us  ----------------*/
+/*---------------- End about us  ----------------*/
 
-   /*--------------- Our partners page styling ---------------*/
+/*--------------- Our partners page styling ---------------*/
 
-  .partners-hero {
-    background-color: rgba(10, 61, 95, 1);
-    background: rgb(0,115,174);
-    background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/thedropzone.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
-   }
+.partners-hero {
+  background-color: rgba(10, 61, 95, 1);
+  background: rgb(0,115,174);
+  background: linear-gradient(350deg, rgba(0,115,174,0.4) 3%, rgba(0,115,174,0.4) 42%, rgba(0,115,174,0.4) 98%), url(images/thedropzone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+}
   
 .partners-info {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 0;
-  }
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+}
   
-   .partners-hero h2 {
-    font-family: 'destroyregular';
-    line-height: 6rem;
-    font-size: 4.6rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 100px;
-  }
+.partners-hero h2 {
+  font-family: 'destroyregular';
+  line-height: 6rem;
+  font-size: 4.6rem;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
   
- .partners-hero h3 {
-    font-family: 'destroyregular';
-    line-height: 4rem;
-    font-size: 3.0rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px;
-  }
+.partners-hero h3 {
+  font-family: 'destroyregular';
+  line-height: 4rem;
+  font-size: 3.0rem;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+}
   
-  .partners-info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+.partners-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   align-content: center;
-  }
+}
   
- .partners-info h4 {
-    font-size: 2.0rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 8px;
-  }
+.partners-info h4 {
+  font-size: 2.0rem;
+  color: rgba(10, 61, 95, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px;
+}
   
 .partners-info p {
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: center;
-  }
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: center;
+}
   
-  .airport-link{
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
+.airport-link{
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
   
-  .info-block {
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 8px 16px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
+.info-block {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 8px 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
   
-  .info-block:nth-child(odd) {
-    flex-flow: row-reverse wrap;
-  }
+.info-block:nth-child(odd) {
+  flex-flow: row-reverse wrap;
+}
   
- .partners-image {
+.partners-image {
   padding: 10px;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  }
+}
   
-  .partners-words {
-    padding: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-  }
+.partners-words {
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+}
   
   .partners-image img {
   max-width: 250px;
@@ -987,296 +984,231 @@ border-radius: 8px;
   }
 
 .partners-link {
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-    /*---------------- End Our partners  ----------------*/
+/*---------------- End Our partners  ----------------*/
 
-   /*---------------- Upcoming Events styling ----------------*/
 
-   .upcoming-info {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 0;
-  }
+/*---------------- Contact us page styling ----------------*/
 
-   .upcoming-info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .upcoming-info h4 {
-    font-size: 2.4rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .upcoming-info p {
-    font-size: 1.8rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: center;
-  }
-  
-  .info-block {
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 8px 35px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .upcoming-image {
-    padding: 25px;
+
+.contact-hero {
+  background-color: rgba(10, 61, 95, 1);
+  background: rgb(0,115,174);
+  background: linear-gradient(350deg, rgba(0,115,174,0.5) 3%, rgba(0,115,174,0.5) 42%, rgba(0,115,174,0.5) 98%), url(images/Krystal-tandem.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  }
+  align-content: center;
+}
+
+.contact-hero h2 {
+  font-family: 'destroyregular';
+  line-height: 5rem;
+  font-size: 4.0rem;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+}
+
+.contact-info h4 {
+  font-size: 2.0rem;
+  color: rgba(10, 61, 95, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px;
+}
   
-  .upcoming-words {
-    padding: 25px;
-  }
+.contact-info p {
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: center;
+}
   
-  .upcoming-image img {
-    max-width: 250px;
-    background: rgb(80,202,245);
-    background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    padding: 6px;
-    margin: 10px;
-    border-radius: 8px;
-  }
-
-  /*---------------- End Upcoming Events  ----------------*/
-
-  /*---------------- Contact us page styling ----------------*/
-
-  .contact-hero {
-    background-color: rgba(10, 61, 95, 1);
-    background: rgb(0,115,174);
-    background: linear-gradient(350deg, rgba(0,115,174,0.5) 3%, rgba(0,115,174,0.5) 42%, rgba(0,115,174,0.5) 98%), url(images/Krystal-tandem.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
-   }
-
-   .contact-hero h2 {
-    font-family: 'destroyregular';
-    line-height: 5rem;
-    font-size: 4.0rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 100px;
-  }
-
-  .contact-info {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 0;
-  }
-
-  .contact-info h4 {
-    font-size: 2.0rem;
-    color: rgba(10, 61, 95, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding: 8px;
-  }
+.contact-block {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 8px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
   
-  .contact-info p {
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: center;
-  }
+.contact-image {
+  padding: 25px;
+}
   
-  .contact-block {
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    padding: 4px;
-    margin: 8px 16px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+.contact-words {
+  padding: 25px;
+}
   
-  .contact-image {
-    padding: 25px;
-  }
-  
-  .contact-words {
-    padding: 25px;
-  }
-  
-  .contact-image img {
-    max-width: 250px;
-    background: rgb(80,202,245);
-    background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    padding: 6px;
-    margin: 10px;
-    border-radius: 8px;
-  }
+.contact-image img {
+  max-width: 250px;
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 8px;
+}
 
-  .phone{
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
+.phone{
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
-  .e-mail{
-    font-size: 1.6rem;
-    color: rgba(10, 61, 95, 1);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
+.e-mail{
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
-  /* ---------------- Contact Form Styling ---------------- */
 
-  * {
-    box-sizing: border-box;
- }
- form {
-   border: 1px solid #c6c7cc;
-   border-radius: 5px;
-   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-   overflow: hidden;
-   max-width: 100%;
- }
- fieldset {
-   border: 0;
-   margin: 0;
-   padding: 0;
- }
+  /* ---------------- Contact Form ---------------- */
+
+form {
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
  
- input, textarea {
-   border-radius: 4px;
-   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-   margin: 0;
- }
+input, textarea {
+  border-radius: 4px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
  
- label::before{
-   content:"*";
-   color: rgba(241, 93, 46, 1);
-   font-size: 1.4rem;
- }
+label::before{
+  content:"*";
+  color: rgba(241, 93, 46, 1);
+  font-size: 1.4rem;
+}
  
- .contact-form {
-   padding: 20px 20px 0 20px;
- }
- .contact-form label {
-   color: #395870;
-   display: block;
-   font-weight: bold;
-   margin-bottom: 20px;
- }
- .contact-form input, textarea {
-   background: #fff;
-   border: 1px solid #c6c7cc;
-   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
-   color: #636466;
-   padding: 6px;
-   margin-top: 6px;
-   width: 100%;
- }
+.contact-form {
+  padding: 20px 20px 0 20px;
+}
+
+.contact-form label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form input, textarea {
+  background: #fff;
+  border: 1px solid #c6c7cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 100%;
+}
  
- .form-action {
-   padding: 20px;
-   display: flex;
-   justify-content: space-between;
-   flex-flow: row wrap;
-   flex-grow:1;
- }
+.form-action {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex-grow:1;
+}
  
- .form-action button {
-     flex-grow:1;
- }
+.form-action button {
+  flex-grow:1;
+}
  
-  .submit-formEntry {
-     background: rgb(80,202,245,1);
-     background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     /* border: 3px solid white; */
-     border: none;
-     border-radius: 8px;
-     color: white;
-     padding: 10px 32px;
-     text-align: center;
-     text-decoration: none;
-     text-transform: uppercase;
-     justify-content: center;
-     align-self: center;
-     font-size: 1.4rem;
-     margin: 15px;
-     padding: 10px;
-     cursor: pointer;
-   }
+.submit-formEntry {
+  background: rgb(80,202,245,1);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%, rgba(0,115,174,0.7) 50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-self: center;
+  font-size: 1.4rem;
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
  
- .reset-formEntry {
-     background: rgb(80,202,245);
-     background: linear-gradient(171deg, rgba(80,202,245,1) 0%,           rgba(255,255,255,1)     59%);
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     border: none;
-     border-radius: 8px;
-     color: rgba(0, 115, 174, 1);
-     padding: 10px 32px;
-     text-align: center;
-     text-decoration: none;
-     text-transform: uppercase;
-     justify-content: center;
-     align-self: center;
-     font-size: 1.4rem;
-     margin: 15px;
-     padding: 10px;
-     cursor: pointer;
- }
+.reset-formEntry {
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 0%,           rgba(255,255,255,1)     59%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 8px;
+  color: rgba(0, 115, 174, 1);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-self: center;
+  font-size: 1.4rem;
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
  
-  .reset-formEntry:hover {
-     color: rgba(241, 93, 46, 1);
-     background: rgb(80,202,245);
-     background: linear-gradient(171deg, rgba(80,202,245,1) 0%, rgba(255,255,255,1)     59%);
-     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-   }
+ .reset-formEntry:hover {
+  color: rgba(241, 93, 46, 1);
+  background: rgb(80,202,245);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 0%, rgba(255,255,255,1)     59%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
  
-  .submit-formEntry:hover {
-     color: rgba(241, 93, 46, 1);
-     background: rgb(80,202,245,1);
-     background: linear-gradient(171deg, rgba(80,202,245,1) 3%,           rgba(0,115,174,0.7)     50%, rgba(10,61,95,1) 89%);
-     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-   }
+.submit-formEntry:hover {
+  color: rgba(241, 93, 46, 1);
+  background: rgb(80,202,245,1);
+  background: linear-gradient(171deg, rgba(80,202,245,1) 3%,           rgba(0,115,174,0.7)     50%, rgba(10,61,95,1) 89%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
 
-  /* ---------------- End Contact Form Styling ---------------- */
+/* ---------------- End Contact Form Styling ---------------- */
 
-   /*---------------- End contact us  ----------------*/
+/*---------------- End contact us  ----------------*/
 
 
-
-   /*---------------- Under Construction Styling ----------------*/
+/*---------------- Under Construction Styling ----------------*/
 
 
 .under-construction {
@@ -1286,176 +1218,181 @@ border-radius: 8px;
   align-content: center;
 }
 
-   .construction-hero {
-    /* background construction image from UnSplash */
-    background-color: rgba(10, 61, 95, 1);
-    background: rgb(0,115,174);
-    background: linear-gradient(350deg, rgba(0,115,174,0.5) 3%, rgba(0,115,174,0.5) 42%, rgba(0,115,174,0.5) 98%), url(images/under-construction2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-content: center;
-    padding: 25px;
-   }
+.construction-hero {
+  /* background construction image from UnSplash */
+  background-color: rgba(10, 61, 95, 1);
+  background: rgb(0,115,174);
+  background: linear-gradient(350deg, rgba(0,115,174,0.5) 3%, rgba(0,115,174,0.5) 42%, rgba(0,115,174,0.5) 98%), url(images/under-construction2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-content: center;
+  padding: 25px;
+}
 
-   .construction-hero h3 {
-    font-family: 'destroyregular';
-    line-height: 4rem;
-    font-size: 2.4rem;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 100px;
-  }
+.construction-hero h3 {
+  font-family: 'destroyregular';
+  line-height: 4rem;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
 
-  .construction-block {
-    background-color: rgba(10, 61, 95, 0.5);
-    padding: 16px;
-  }
+.construction-block {
+  background-color: rgba(10, 61, 95, 0.5);
+  padding: 16px;
+}
 
-  .construction-item {
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 8px 16px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+.construction-item {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 8px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .construction-item p {
-    line-height: 4rem;
-    font-size: 2.0rem;
-    color: rgba(10, 61, 95, 1);
-    font-weight: 500;
-    text-align: center;
-    padding: 16px;
-  }
+.construction-item p {
+  line-height: 4rem;
+  font-size: 2.0rem;
+  color: rgba(10, 61, 95, 1);
+  font-weight: 500;
+  text-align: center;
+  padding: 16px;
+}
 
-   /*---------------- End construction styling ----------------*/
+/*---------------- End construction styling ----------------*/
 
-   @media only screen and (min-width: 400px){
+/*---------------- Start of Media Queries----------------*/
 
-    .home-image img {
-      max-width: 275px;
-      padding: 10px;
-      margin: 10px;
-      }
+@media only screen and (min-width: 400px){
 
-   .contact-image img {
-    max-width: 275px;
-    padding: 8px;
-    margin: 10px;
-  }
+.home-image img {
+  max-width: 275px;
+  padding: 10px;
+  margin: 10px;
+}
 
-  .about-image img {
-    max-width: 275px;
-    padding: 10px;
-    margin: 10px;
-    }
+.contact-image img {
+  max-width: 275px;
+  padding: 8px;
+  margin: 10px;
+}
 
-    .partners-image img {
-      max-width: 275px;
-      padding: 10px;
-      margin: 10px;
-      }
+.about-image img {
+  max-width: 275px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.partners-image img {
+  max-width: 275px;
+  padding: 10px;
+  margin: 10px;
+}
 
 }
 
+
  @media only screen and (min-width: 500px) {
 
-  .hero video, .video-overlay {
-    height: 720px;
-    object-fit: cover;
-    position: absolute;
-  }
+.hero video, .video-overlay {
+  height: 720px;
+  object-fit: cover;
+  position: absolute;
+}
 
-  .hero {
-    height: 720px;
-    display: flex;
-  }
+.hero {
+  height: 720px;
+  display: flex;
+}
 
 
-  .hero h1 {
-    font-size: 6.5rem;
-    line-height: 8rem;
-    padding-top: 200px;
-  }
+.hero h1 {
+  font-size: 6.5rem;
+  line-height: 8rem;
+  padding-top: 200px;
+}
 
 /*----- Footer -----*/
 
-  .copyright {
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: baseline;
-    margin: 0px 25px;
-    padding: 0px 25px;
-  }
+.copyright {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: baseline;
+  margin: 0px 25px;
+  padding: 0px 25px;
+}
 
-  /*----- Footer -----*/
+  /*----- End Footer -----*/
 
 
-  .tandem-pricing-hero h2 {
-    line-height: 9.0rem;
-    font-size: 8.0rem;
-    padding-top: 125px;
-  }
+.tandem-pricing-hero h2 {
+  line-height: 9.0rem;
+  font-size: 8.0rem;
+  padding-top: 125px;
+}
 
-  .partners-hero h2 {
-    line-height: 8.0rem;
-    font-size: 7.0rem;
-    padding-top: 100px;
-  }
+.partners-hero h2 {
+  line-height: 8.0rem;
+  font-size: 7.0rem;
+  padding-top: 100px;
+}
 
-  .construction-hero{
-    padding: 50px;
-  }
+.construction-hero{
+  padding: 50px;
+}
 
-  .construction-hero h3 {
-    line-height: 4rem;
-    font-size: 3.0rem;
-  }
+.construction-hero h3 {
+  line-height: 4rem;
+  font-size: 3.0rem;
+}
 
- }
+}
+
 
  @media only screen and (min-width: 620px) {
 
-  .hero h1 {
-    font-family: 'destroyregular';
-    line-height: 10rem;
-    font-size: 8.0rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-  }
+.hero h1 {
+  font-family: 'destroyregular';
+  line-height: 10rem;
+  font-size: 8.0rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
 
-  .adventure {
-    flex-flow: column nowrap;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-  }
-  .adventure p {
-    font-size: 2.3rem;
-  }
+.adventure {
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
 
-  .adventure img {
-    max-width: 200px;
- }
+.adventure p {
+  font-size: 2.3rem;
+}
+
+.adventure img {
+  max-width: 200px;
+}
  
 
- .information {
+.information {
   padding: 30px;
- }
+}
 
  #about h3 {
   font-size: 3.6rem;
@@ -1542,18 +1479,6 @@ border-radius: 8px;
   font-size: 1.8rem;
 }
 
- /* .home-image img {
-  max-width: 300px;
-  padding: 8px;
-  margin: 10px;
-} */
-
- /* .about-image img {
-  max-width: 300px;
-  padding: 8px;
-  margin: 10px;
-} */
-
 .upcoming-image img {
   max-width: 300px;
   padding: 8px;
@@ -1576,40 +1501,44 @@ border-radius: 8px;
 }
 
  }
+
+
  @media only screen and (min-width: 768px) {
 
+
+  /* I added some extra comments in the media areas where there was alot of content to seperate it */
  /*---------------- Homepage Hero  ------------------*/
 
- .button {
+.button {
   padding: 10px 32px;
   font-size: 2.8rem;
   margin: 15px;
 }
 
-  .hamburger-menu-container p{
-    font-size: 2.4rem;
-    color: #fff;
-    padding-right: 6px;
-    z-index: 1001;
-  }
+.hamburger-menu-container p{
+  font-size: 2.4rem;
+  color: #fff;
+  padding-right: 6px;
+  z-index: 1001;
+}
 
   .adventure-options {
-    flex-flow: row nowrap;
-    width: 90%;
-  }
+  flex-flow: row nowrap;
+  width: 90%;
+}
 
-     .adventure {
-        margin: 15px;
-        padding: 8px;
-     }
+.adventure {
+  margin: 15px;
+  padding: 8px;
+}
 
-     .booking-link{
-      font-size: 1.8rem;
-      }
+  .booking-link{
+  font-size: 1.8rem;
+}
 
-    .adventure img {
-        max-width: 200px;
-     }
+.adventure img {
+    max-width: 200px;
+}
  
 
  .information {
@@ -1640,7 +1569,7 @@ border-radius: 8px;
   padding-top: 100px;
 }
 
- .pricing-tiers {
+.pricing-tiers {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1690,81 +1619,85 @@ border-radius: 8px;
 
 /*--------------- End Under Construction ---------------*/
 
-
 }
 
- @media (min-width: 860px) {
 
-  .adventure p {
-    font-size: 1.8rem;
-     }
 
-     .information-item {
+@media (min-width: 860px) {
+
+.adventure p {
+  font-size: 1.8rem;
+}
+
+.information-item {
   padding-bottom: 30%;
 }
 
- }
-
- @media (min-width: 900px) {
-
-  .info-block:nth-child(odd) {
-    flex-flow: row-reverse nowrap;
-  }
-
-  /* trying to target the index info block sections to get them to reverse from eachother, but it hasn't been working. I will keep working on this */
-  #about{
-    flex-flow: row nowrap;
-  }
-
-  .info-block {
-    padding: 15px;
-    margin: 25px 50px;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pricing-info-container {
-    padding: 50px;
- }
-
-  .contact-block {
-    padding: 15px;
-    margin: 25px 50px;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-block:nth-child(odd) {
-    flex-flow: row-reverse nowrap;
-  }
-
- }
-
- @media only screen and (min-width: 1024px) {
-
-  .logo {
-    max-width: 100px;
-    height: auto;
-    padding: 8px;
 }
 
+
+@media (min-width: 900px) {
+
+.info-block:nth-child(odd) {
+  flex-flow: row-reverse nowrap;
+}
+
+  /* trying to target the index info block sections to get them to reverse from eachother, but it hasn't been working. I will keep working on this */
+ #about{
+  flex-flow: row nowrap;
+}
+
+.info-block {
+  padding: 15px;
+  margin: 25px 50px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-info-container {
+  padding: 50px;
+}
+
+.contact-block {
+  padding: 15px;
+  margin: 25px 50px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-block:nth-child(odd) {
+  flex-flow: row-reverse nowrap;
+}
+
+ }
+
+
 @media only screen and (min-width: 1024px){
+
+/*--------------- Full Width Nav Bar ---------------*/
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  padding: 8px;
+}
   
-  #check{
-      display: none;
-  }
-  .nav-container{
-    max-width: 95%;
-    padding: 0 2rem;
-    margin: 0;
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
+#check{
+  display: none;
+}
+
+.nav-container{
+  max-width: 95%;
+  padding: 0 2rem;
+  margin: 0;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
 .nav-bar{
   position: initial;
@@ -1781,68 +1714,68 @@ border-radius: 8px;
   text-align: center;
 } 
  
-  .nav-links {
-    display: flex;
-    justify-content: space-between;
-  }
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
   
-    .nav-links {
-    padding: 0 15px;
-  }
+.nav-links {
+  padding: 0 15px;
+}
   
-    .nav-link {
-    justify-content: space-around;
-    align-items: flex-start;
-    float: left;
-    list-style: none;
-    padding: 0 10px;
-  }
+.nav-link {
+  justify-content: space-around;
+  align-items: flex-start;
+  float: left;
+  list-style: none;
+  padding: 0 10px;
+}
   
- .nav-link a {
-    display: flex;
-    flex-flow: row nowrap;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align:start;
-    font-size: 1.8rem;
-    padding: 10px 0;
-    text-decoration: none;
-  }
+.nav-link a {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align:start;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  text-decoration: none;
+}
   
-   .nav-link a:hover {
-    color: rgba(241, 93, 46, 1);
-    background-color: transparent;
-  }
+.nav-link a:hover {
+  color: rgba(241, 93, 46, 1);
+  background-color: transparent;
+}
   
-  .nav-links ul{
-    background-color: transparent;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-  }
+.nav-links ul{
+  background-color: transparent;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
 
-   .nav-link ul {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 115, 174, 1); 
-    border-radius: 0px 0px 4px 4px;
-  }
+.nav-link ul {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 115, 174, 1); 
+  border-radius: 0px 0px 4px 4px;
+}
   
-   .nav-link:hover ul {
-    background-color: rgba(0, 115, 174, 1); 
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    width: 350px;
-    z-index: 1001;
-  }
+.nav-link:hover ul {
+  background-color: rgba(0, 115, 174, 1); 
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 350px;
+  z-index: 1001;
+}
   
-  .nav-link:hover > a{
-    background-color: transparent;
-    color: rgba(241, 93, 46, 1);
-    width: 100%;
-    z-index: 1001;
-  }
+.nav-link:hover > a{
+  background-color: transparent;
+  color: rgba(241, 93, 46, 1);
+  width: 100%;
+  z-index: 1001;
+}
 
 .dropdown ul{
   width:100%;
@@ -1850,56 +1783,57 @@ border-radius: 8px;
 
 .dropdown-link ul{
   width: 100%;
-  }
+}
   
-  .dropdown-link li {
+.dropdown-link li {
   padding: 8px 14px;
-  }
+}
   
  .dropdown-link a:hover {
   color: rgba(241, 93, 46, 1);
   border-radius: 4px;
   z-index: 1001;
-  }
-
-
-  .hamburger-menu-container{
-    display: none;
-  }
 }
 
-        nav ul li a {
-          font-size: 2.6rem;
-          padding: 10px 0;
-          text-decoration: none;
-        }
 
-        .dropdown ul li{
-          padding: 0 3rem;
-            }
+.hamburger-menu-container{
+  display: none;
+}
 
-        .hero h1 {
-          font-size: 8.0rem;
-          line-height: 10rem;
-        }
+nav ul li a {
+  font-size: 2.6rem;
+  padding: 10px 0;
+  text-decoration: none;
+}
 
-    .adventure {
-        justify-content: space-around;
-        margin: 15px;
-        padding: 15px;
-        }
+.dropdown ul li{
+  padding: 0 3rem;
+}
 
-        .adventure img {
-          max-width: 250px;
-      }
+.hero h1 {
+  font-size: 8.0rem;
+  line-height: 10rem;
+}
+/*--------------- End Full Width Nav Bar ---------------*/
 
-      .booking-link{
-        font-size: 2.4rem;
-        font-weight: 600;
-        padding-top: 15px;
- }
 
-  .information-item {
+.adventure {
+  justify-content: space-around;
+  margin: 15px;
+  padding: 15px;
+}
+
+.adventure img {
+  max-width: 250px;
+}
+
+.booking-link{
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.information-item {
   padding-bottom: 30%;
 }
 
@@ -1933,49 +1867,50 @@ border-radius: 8px;
   margin: 10px;
 }
 
-    }
-
-    @media only screen and (min-width: 1220px) {
+}
 
 
-      .nav-link a {
-        font-size: 2.4rem;
-        padding: 10px 0;
+ @media only screen and (min-width: 1220px) {
+
+  .nav-link a {
+    font-size: 2.4rem;
+    padding: 10px 0;
  
-      }
+  }
 
-        .adventure {
-            margin: 15px;
-            padding: 15px;
+  .adventure {
+    margin: 15px;
+    padding: 15px;
 
-            }
+  }
 
-            .adventure img {
-                max-width: 300px;
-            }
-    }
+  .adventure img {
+  max-width: 300px;
+  }
+}
 
-    @media only screen and (min-width: 1400px) {
 
-      .hero h1 {
-        font-size: 9.0rem;
-        line-height: 11rem;
-      }
+@media only screen and (min-width: 1400px) {
 
-      .adventure img {
-        max-width: 375px;
-    }
+  .hero h1 {
+    font-size: 9.0rem;
+    line-height: 11rem;
+  }
 
-    }
+  .adventure img {
+    max-width: 375px;
+  }
 
-    @media only screen and (min-width: 1600px) {
+}
 
-      .hero h1 {
-        font-size: 10.0rem;
-        line-height: 12rem;
-      }
+@media only screen and (min-width: 1600px) {
 
-      .adventure img {
-        max-width: 425px;
-    }
-    }
+  .hero h1 {
+    font-size: 10.0rem;
+    line-height: 12rem;
+  }
+
+  .adventure img {
+    max-width: 425px;
+  }
+}
