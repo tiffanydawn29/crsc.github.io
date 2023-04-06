@@ -1344,9 +1344,15 @@ border-radius: 8px;
   }
 
   .tandem-pricing-hero h2 {
+    line-height: 9.0rem;
+    font-size: 8.0rem;
+    padding-top: 125px;
+  }
+
+  .partners-hero h2 {
     line-height: 8.0rem;
     font-size: 7.0rem;
-    padding-top: 125px;
+    padding-top: 100px;
   }
 
   .construction-hero{
