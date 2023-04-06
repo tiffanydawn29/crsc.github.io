@@ -554,9 +554,12 @@ border-radius: 8px;
  /*--------------- End Homepage custom stylings ---------------*/
 
  /*--------------- Start of Footer Widgets ---------------*/
-
+.footer-container{
+  background-color: rgba(10, 61, 95, 0.5);
+  width: 100%;
+}
  .information {
-  background-color: rgba(0, 115, 174, 0.75);
+  background-color: none;
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
@@ -588,6 +591,51 @@ border-radius: 8px;
  }
 
  /*--------------- End of footer widgets ---------------*/
+
+ /*--------------- Copyright/Disclaimer footer styling ---------------*/
+.copyright {
+  border-top: 0.5px solid #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+
+.copyright a  {
+  text-underline-offset: 3px;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0;
+  text-align: left;
+  line-height: 2em;
+  margin: 0;
+}
+
+.copyright p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.disclaimer {
+  border-top: 0.5px solid #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 0px 10px;
+  padding: 10px
+}
+
+.disclaimer p {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+ /*--------------- End copyright footer styling ---------------*/
 
   /*--------------- Tandem Booking page styling ---------------*/
 
@@ -1343,6 +1391,19 @@ border-radius: 8px;
     padding-top: 200px;
   }
 
+/*----- Footer -----*/
+
+  .copyright {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin: 0px 25px;
+    padding: 0px 25px;
+  }
+
+  /*----- Footer -----*/
+
+
   .tandem-pricing-hero h2 {
     line-height: 9.0rem;
     font-size: 8.0rem;
@@ -1560,7 +1621,6 @@ border-radius: 8px;
  
 
  .information {
-  background-color: rgba(0, 115, 174, 0.75);
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
