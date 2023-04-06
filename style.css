@@ -847,7 +847,7 @@ border-radius: 8px;
    .partners-hero h2 {
     font-family: 'destroyregular';
     line-height: 6rem;
-    font-size: 5.0rem;
+    font-size: 4.6rem;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     font-weight: 500;
@@ -915,14 +915,14 @@ border-radius: 8px;
   }
   
  .partners-image {
-  padding: 25px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   }
   
   .partners-words {
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
