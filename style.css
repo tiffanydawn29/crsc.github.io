@@ -959,6 +959,20 @@ border-radius: 8px;
     border-radius: 8px;
   }
 
+  .phone{
+    font-size: 1.6rem;
+    color: rgba(10, 61, 95, 1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .e-mail{
+    font-size: 1.6rem;
+    color: rgba(10, 61, 95, 1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
   /* ---------------- Contact Form Styling ---------------- */
 
   * {
