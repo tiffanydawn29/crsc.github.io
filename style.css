@@ -762,6 +762,13 @@ align-content: center;
   text-align: center;
 }
 
+.airport-link{
+  font-size: 1.6rem;
+  color: rgba(10, 61, 95, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .info-block {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
